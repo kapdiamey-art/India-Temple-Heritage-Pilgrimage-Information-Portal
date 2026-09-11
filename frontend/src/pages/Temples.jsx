@@ -26,7 +26,12 @@ function Temples() {
 
   const filteredTemples = useMemo(() => {
     return temples.filter((temple) => {
-      const matchesSearch = temple.name.toLowerCase().includes(search.trim().toLowerCase())
+      const query = search.trim().toLowerCase()
+      const matchesSearch = !query ||
+        temple.name.toLowerCase().includes(query) ||
+        temple.city.toLowerCase().includes(query) ||
+        temple.state.toLowerCase().includes(query)
+
       const matchesState = selectedState ? temple.state === selectedState : true
       const matchesCity = selectedCity ? temple.city === selectedCity : true
       const matchesDeity = selectedDeity ? temple.deity === selectedDeity : true
@@ -58,9 +63,10 @@ function Temples() {
           <div className="search-bar">
             <Search size={16} />
             <input
+              id="searchInput"
               type="text"
               value={search}
-              placeholder="Search by temple name"
+              placeholder="Search by temple, city or state"
               onChange={(event) => setSearch(event.target.value)}
             />
           </div>
