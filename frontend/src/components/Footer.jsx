@@ -33,8 +33,8 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <span>� 2026 Dharohar Bharat</span>
-        <span>Heritage � Pilgrimage � Culture</span>
+        <span>© 2026 Dharohar Bharat</span>
+        <span>Heritage • Pilgrimage • Culture</span>
       </div>
     </footer>
   )
