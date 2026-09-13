@@ -1,1 +1,4 @@
-"""API route package for the Temple Heritage backend."""
+from app.routes.temples import router as temples_router
+
+__all__ = ["temples_router"]
+
