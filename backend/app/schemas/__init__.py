@@ -1,1 +1,4 @@
-"""Request and response schema package placeholder."""
+from app.schemas.temple import TempleBase, TempleRead
+
+__all__ = ["TempleBase", "TempleRead"]
+

@@ -1,7 +1,21 @@
+from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from app.database import init_db
 
-app = FastAPI(title="Temple Heritage API", version="0.1.0")
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Initialize database tables on startup
+    init_db()
+    yield
+
+
+app = FastAPI(
+    title="Temple Heritage API",
+    version="0.1.0",
+    lifespan=lifespan,
+)
 
 app.add_middleware(
     CORSMiddleware,
@@ -11,9 +25,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 @app.get("/api/health")
 def health_check():
     return {
         "status": "ok",
         "message": "Temple Heritage backend is running",
     }
+

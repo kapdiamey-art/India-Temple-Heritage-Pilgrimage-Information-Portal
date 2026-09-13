@@ -1,1 +1,4 @@
-"""Data models package placeholder for future database-backed entities."""
+from app.models.temple import Temple
+
+__all__ = ["Temple"]
+
