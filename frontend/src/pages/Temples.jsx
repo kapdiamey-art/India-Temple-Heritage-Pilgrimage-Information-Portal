@@ -38,16 +38,16 @@ function Temples() {
 
   const states = useMemo(() => {
     return [...new Set(temples.map((temple) => temple.state))].sort()
-  }, [])
+  }, [temples])
 
   const cities = useMemo(() => {
     const matchingStates = selectedState ? temples.filter((temple) => temple.state === selectedState) : temples
     return [...new Set(matchingStates.map((temple) => temple.city))].sort()
-  }, [selectedState])
+  }, [selectedState, temples])
 
   const deities = useMemo(() => {
     return [...new Set(temples.map((temple) => temple.deity))].sort()
-  }, [])
+  }, [temples])
 
   const filteredTemples = useMemo(() => {
     return temples.filter((temple) => {
@@ -57,13 +57,14 @@ function Temples() {
         temple.city.toLowerCase().includes(query) ||
         temple.state.toLowerCase().includes(query)
 
-      const matchesState = selectedState ? temple.state === selectedState : true
-      const matchesCity = selectedCity ? temple.city === selectedCity : true
-      const matchesDeity = selectedDeity ? temple.deity === selectedDeity : true
+      const matchesState = selectedState ? temple.state.toLowerCase() === selectedState.toLowerCase() : true
+      const matchesCity = selectedCity ? temple.city.toLowerCase() === selectedCity.toLowerCase() : true
+      const matchesDeity = selectedDeity ? temple.deity.toLowerCase() === selectedDeity.toLowerCase() : true
 
       return matchesSearch && matchesState && matchesCity && matchesDeity
     })
-  }, [search, selectedState, selectedCity, selectedDeity])
+  }, [search, selectedState, selectedCity, selectedDeity, temples])
+
 
   const clearFilters = () => {
     setSearch('')
