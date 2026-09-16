@@ -1,6 +1,14 @@
+import { Link } from 'react-router-dom'
+import { ArrowLeft } from 'lucide-react'
+
 function About() {
   return (
     <section className="page page-about">
+      <div className="breadcrumb-nav">
+        <Link to="/" className="back-home-btn">
+          <ArrowLeft size={16} /> Back to Home Page
+        </Link>
+      </div>
       <section className="page-hero compact-hero">
         <div className="page-hero-content">
           <span className="eyebrow light">About Dharohar Bharat</span>

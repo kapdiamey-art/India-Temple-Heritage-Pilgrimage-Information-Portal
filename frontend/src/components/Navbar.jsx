@@ -6,6 +6,7 @@ function Navbar() {
   const [open, setOpen] = useState(false)
 
   const navLinks = [
+    { label: 'Home', to: '/' },
     { label: 'Temples', to: '/temples' },
     { label: 'Pilgrimage', to: '/circuits' },
     { label: 'Festivals', to: '/festivals' },

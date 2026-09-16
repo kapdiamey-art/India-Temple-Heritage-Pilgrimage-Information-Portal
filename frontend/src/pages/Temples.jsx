@@ -1,6 +1,6 @@
 import { useMemo, useState, useEffect } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { Search, X, Loader2 } from 'lucide-react'
+import { Search, X, Loader2, ArrowLeft } from 'lucide-react'
 import { fetchTemples } from '../services/api.js'
 
 const fallbackImage = '/images/temples/kashi-vishwanath.jpg'
@@ -77,6 +77,11 @@ function Temples() {
 
   return (
     <section className="page page-temples">
+      <div className="breadcrumb-nav">
+        <Link to="/" className="back-home-btn">
+          <ArrowLeft size={16} /> Back to Home Page
+        </Link>
+      </div>
       <section className="page-hero compact-hero">
         <div className="page-hero-content">
           <span className="eyebrow light">Temple Directory</span>
