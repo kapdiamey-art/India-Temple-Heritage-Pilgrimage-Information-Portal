@@ -137,7 +137,7 @@ function Home() {
               <article className="temple-card-home" key={temple.id}>
                 <Link className="temple-image-link" to={`/temples/${temple.id}`}> 
                   <img className="temple-card-image" src={temple.image} alt={temple.name}
-                    onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = 'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80'; }}
+                    onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/temples/kashi-vishwanath.jpg'; }}
                   />
                 </Link>
                 <div className="temple-card-content">

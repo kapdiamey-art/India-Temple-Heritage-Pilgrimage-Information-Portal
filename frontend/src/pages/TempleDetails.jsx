@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import { ArrowLeft, Calendar, Clock, MapPin, Landmark, Info, Shield, ExternalLink, CheckCircle, Loader2 } from 'lucide-react'
 import { fetchTempleById, fetchTemples } from '../services/api.js'
 
-const fallbackImage = 'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80'
+const fallbackImage = '/images/temples/kashi-vishwanath.jpg'
 
 function TempleDetails() {
   const { id } = useParams()
