@@ -18,11 +18,15 @@ def init_db():
     """Create all database tables for development using SQLAlchemy metadata."""
     try:
         import app.models  # noqa: F401 - ensure models register on Base.metadata
-        with engine.connect() as connection:
+        with engine.begin() as connection:
             connection.execute(text("SELECT 1"))
-        Base.metadata.create_all(bind=engine)
+            Base.metadata.create_all(bind=connection)
+            connection.execute(text("ALTER TABLE temples ADD COLUMN IF NOT EXISTS source_name VARCHAR(200);"))
+            connection.execute(text("ALTER TABLE temples ADD COLUMN IF NOT EXISTS source_url VARCHAR(500);"))
+            connection.execute(text("ALTER TABLE temples ADD COLUMN IF NOT EXISTS last_verified_at VARCHAR(50);"))
     except Exception as exc:
         raise RuntimeError(f"Database initialization failed: {exc}") from exc
+
 
 
 def get_db():

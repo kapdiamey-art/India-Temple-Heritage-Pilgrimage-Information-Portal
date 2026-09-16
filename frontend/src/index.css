@@ -1542,38 +1542,61 @@ select {
 @media (max-width: 900px) {
   .hero-backdrop,
   .hero-overlay {
-    min-height: 580px;
+    min-height: 520px;
   }
 
   .hero-content h1 {
-    font-size: 50px;
+    font-size: clamp(34px, 8vw, 48px);
   }
 
   .hero-content p {
-    font-size: 16px;
+    font-size: 15px;
+  }
+
+  .hero-search {
+    width: 100%;
+    max-width: 100%;
   }
 
   .hero-buttons {
     flex-direction: column;
+    width: 100%;
   }
 
   .section-block {
-    padding: 50px 22px;
+    padding: 40px 18px;
   }
 
   .temple-card-grid,
+  .temples-grid,
   .state-grid,
   .deity-grid,
   .circuit-grid,
   .festival-grid,
   .story-grid,
-  .footer-grid {
-    grid-template-columns: 1fr;
+  .footer-grid,
+  .detail-hero,
+  .detail-main-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .filter-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .detail-hero-image img {
+    min-height: 280px;
+    max-height: 360px;
+  }
+
+  .detail-hero-content {
+    padding: 24px 20px;
   }
 
   .cta-panel {
     flex-direction: column;
     align-items: stretch;
+    padding: 40px 24px;
   }
 
   .footer-bottom {
@@ -1582,4 +1605,33 @@ select {
     gap: 12px;
   }
 }
+
+@media (max-width: 600px) {
+  .site-header {
+    padding: 12px 16px;
+  }
+
+  .brand-text {
+    font-size: 22px;
+  }
+
+  .main-nav {
+    gap: 14px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+  }
+
+  .filter-row {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-copy-grid,
+  .timing-grid,
+  .visitor-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 

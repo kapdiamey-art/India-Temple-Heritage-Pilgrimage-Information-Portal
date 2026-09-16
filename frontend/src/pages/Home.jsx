@@ -1,6 +1,7 @@
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { Search, MapPin, Landmark, Calendar, Route, ArrowRight } from 'lucide-react'
-import temples from '../data/temples.js'
+import { Search, MapPin, Landmark, Calendar, Route, ArrowRight, Loader2 } from 'lucide-react'
+import { fetchTemples } from '../services/api.js'
 
 const states = [
   { name: 'Goa', count: 15 },
@@ -45,6 +46,21 @@ const stories = [
 ]
 
 function Home() {
+  const [temples, setTemples] = useState([])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    fetchTemples()
+      .then((data) => {
+        setTemples(data)
+        setLoading(false)
+      })
+      .catch((err) => {
+        console.error('Failed to load temples:', err)
+        setLoading(false)
+      })
+  }, [])
+
   return (
     <div className="home-page">
       <section className="hero-section">
@@ -83,21 +99,29 @@ function Home() {
         </div>
 
         <div className="temple-card-grid">
-          {temples.slice(0, 4).map((temple) => (
-            <article className="temple-card-home" key={temple.id}>
-              <Link className="temple-image-link" to={`/temples/${temple.id}`}> 
-                <img className="temple-card-image" src={temple.image} alt={temple.name} />
-              </Link>
-              <div className="temple-card-content">
-                <span className="city-state"><MapPin size={14} /> {temple.city}, {temple.state}</span>
-                <h3>{temple.name}</h3>
-                <span className="deity-label"><Landmark size={14} /> {temple.deity}</span>
-                <p>{temple.shortDescription}</p>
-                <Link className="card-button" to={`/temples/${temple.id}`}>Explore Temple</Link>
-              </div>
-            </article>
-          ))}
+          {loading ? (
+            <div style={{ gridColumn: '1 / -1', textAlign: 'center', padding: '2rem 0' }}>
+              <Loader2 className="animate-spin" size={32} style={{ margin: '0 auto', color: '#B8860B' }} />
+              <p style={{ marginTop: '0.5rem', color: '#666' }}>Loading temple heritage records...</p>
+            </div>
+          ) : (
+            temples.slice(0, 4).map((temple) => (
+              <article className="temple-card-home" key={temple.id}>
+                <Link className="temple-image-link" to={`/temples/${temple.id}`}> 
+                  <img className="temple-card-image" src={temple.image} alt={temple.name} />
+                </Link>
+                <div className="temple-card-content">
+                  <span className="city-state"><MapPin size={14} /> {temple.city}, {temple.state}</span>
+                  <h3>{temple.name}</h3>
+                  <span className="deity-label"><Landmark size={14} /> {temple.deity}</span>
+                  <p>{temple.short_description}</p>
+                  <Link className="card-button" to={`/temples/${temple.id}`}>Explore Temple</Link>
+                </div>
+              </article>
+            ))
+          )}
         </div>
+
       </section>
 
       <section className="section-block state-section">

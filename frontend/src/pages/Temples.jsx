@@ -1,15 +1,30 @@
-import { useMemo, useState } from 'react'
+import { useMemo, useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { Search, X } from 'lucide-react'
-import temples from '../data/temples.js'
+import { Search, X, Loader2 } from 'lucide-react'
+import { fetchTemples } from '../services/api.js'
 
 const fallbackImage = 'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80'
 
 function Temples() {
+  const [temples, setTemples] = useState([])
+  const [loading, setLoading] = useState(true)
   const [search, setSearch] = useState('')
   const [selectedState, setSelectedState] = useState('')
   const [selectedCity, setSelectedCity] = useState('')
   const [selectedDeity, setSelectedDeity] = useState('')
+
+  useEffect(() => {
+    fetchTemples()
+      .then((data) => {
+        setTemples(data)
+        setLoading(false)
+      })
+      .catch((err) => {
+        console.error('Failed to load temples:', err)
+        setLoading(false)
+      })
+  }, [])
+
 
   const states = useMemo(() => {
     return [...new Set(temples.map((temple) => temple.state))].sort()
@@ -54,7 +69,6 @@ function Temples() {
           <span className="eyebrow light">Temple Directory</span>
           <h1>Explore Temples</h1>
           <p>Discover sacred temples and heritage destinations across India.</p>
-          <span className="sample-data-note">Sample UI data for testing only</span>
         </div>
       </section>
 
@@ -115,7 +129,12 @@ function Temples() {
           <span>Showing {filteredTemples.length} {filteredTemples.length === 1 ? 'temple' : 'temples'}</span>
         </div>
 
-        {filteredTemples.length > 0 ? (
+        {loading ? (
+          <div style={{ textAlign: 'center', padding: '4rem 0' }}>
+            <Loader2 className="animate-spin" size={36} style={{ margin: '0 auto', color: '#B8860B' }} />
+            <p style={{ marginTop: '0.75rem', color: '#666' }}>Fetching temple heritage records from database...</p>
+          </div>
+        ) : filteredTemples.length > 0 ? (
           <section className="cards-grid temples-grid">
             {filteredTemples.map((temple) => (
               <article className="place-card" key={temple.id}>
@@ -134,10 +153,9 @@ function Temples() {
                   <span className="place-state">{temple.state}</span>
                   <h3>{temple.name}</h3>
                   <p className="place-city">{temple.city}</p>
-                  <p className="place-description">{temple.shortDescription}</p>
+                  <p className="place-description">{temple.short_description}</p>
                   <div className="place-meta">
                     <span className="deity-text">{temple.deity}</span>
-                    {temple.featured && <span className="featured-chip">Featured</span>}
                   </div>
                   <Link className="card-button" to={`/temples/${temple.id}`}>View Temple</Link>
                 </div>
@@ -156,6 +174,7 @@ function Temples() {
             </div>
           </section>
         )}
+
       </section>
     </section>
   )

@@ -22,3 +22,7 @@ class Temple(Base):
     best_time_to_visit = Column(Text, nullable=False)
     facilities = Column(JSON, nullable=False, default=list)
     location_information = Column(Text, nullable=False)
+    source_name = Column(String(200), nullable=True)
+    source_url = Column(String(500), nullable=True)
+    last_verified_at = Column(String(50), nullable=True)
+

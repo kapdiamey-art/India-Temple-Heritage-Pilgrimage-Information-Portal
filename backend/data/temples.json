@@ -1,0 +1,316 @@
+[
+  {
+    "name": "Kashi Vishwanath Temple",
+    "city": "Varanasi",
+    "state": "Uttar Pradesh",
+    "deity": "Lord Shiva",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Kashi_Vishwanath_Temple_Varanasi.jpg/800px-Kashi_Vishwanath_Temple_Varanasi.jpg",
+    "short_description": "One of the most famous Hindu temples dedicated to Lord Shiva, located on the western bank of the holy river Ganga in Varanasi.",
+    "historical_background": "The temple has been referred to in Hindu scriptures for millennia as a central part of Shaivism. The current temple structure was constructed by Queen Ahilyabai Holkar of Indore in 1780 after historical demolitions.",
+    "religious_cultural_significance": "It stands as one of the twelve sacred Jyotirlingas. Devotees believe a pilgrimage to Kashi Vishwanath and taking a dip in the holy River Ganga leads to Moksha (liberation).",
+    "darshan_timings": [
+      "03:00 AM - 11:00 AM (Morning Darshan & Aarti)",
+      "11:30 AM - 12:00 PM (Bhog Aarti)",
+      "12:00 PM - 07:00 PM (Afternoon Darshan)",
+      "07:00 PM - 08:30 PM (Sapta Rishi Aarti)",
+      "09:00 PM - 11:00 PM (Shringar Aarti)"
+    ],
+    "daily_rituals": [
+      "Mangala Aarti (3:00 AM)",
+      "Bhog Aarti (11:30 AM)",
+      "Sapta Rishi Aarti (7:00 PM)",
+      "Shringar Aarti (9:00 PM)",
+      "Shayan Aarti (10:30 PM)"
+    ],
+    "festivals": [
+      "Mahashivaratri",
+      "Dev Deepawali",
+      "Rangbhari Ekadashi",
+      "Shravan Month Festivities"
+    ],
+    "dress_code": "Traditional Indian attire is encouraged. Dhoti/Kurta for men and Saree/Salwar Kameez for women. Leather items, mobile phones, and electronic items are strictly prohibited inside the main sanctum.",
+    "visitor_guidelines": "Carry valid government ID. Utilize official locker facilities outside the temple corridor. Follow queue discipline during heavy festive rush.",
+    "best_time_to_visit": "October to March during the pleasant winter climate of Northern India.",
+    "facilities": [
+      "Luggage & Locker Counter",
+      "Wheelchair Assistance",
+      "Prasadam Counters",
+      "Helpdesks",
+      "Drinking Water Stations"
+    ],
+    "location_information": "Situated in Lahori Tola, Varanasi, Uttar Pradesh near Dashashwamedh Ghat along the Ganges riverfront corridor.",
+    "source_name": "Archaeological Survey of India & Ministry of Tourism",
+    "source_url": "https://www.kashivishwanath.org/",
+    "last_verified_at": "2026-09-15"
+  },
+  {
+    "name": "Brihadeeswarar Temple",
+    "city": "Thanjavur",
+    "state": "Tamil Nadu",
+    "deity": "Lord Shiva",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Thanjavur_Brihadeeswarar_Temple_full_view.jpg/800px-Thanjavur_Brihadeeswarar_Temple_full_view.jpg",
+    "short_description": "A UNESCO World Heritage Site built by Chola Emperor Rajaraja I in 1010 AD, renowned for its massive Dravidian architecture and monumental vimana.",
+    "historical_background": "Built entirely of granite between 1003 and 1010 AD by King Rajaraja I, this temple showcases the pinnacle of Chola empire stone architecture and bronze metallurgy.",
+    "religious_cultural_significance": "Represents a landmark masterpiece of South Indian temple architecture, housing one of the largest monolithic Shiva Lingams and single-stone Nandi statues in India.",
+    "darshan_timings": [
+      "06:00 AM - 12:30 PM (Morning Darshan)",
+      "04:00 PM - 08:30 PM (Evening Darshan)"
+    ],
+    "daily_rituals": [
+      "Pal Abhishekam (Morning Milk Anointment)",
+      "Uchikala Puja (Midday Offering)",
+      "Sayaratchai Puja (Evening Prayer)",
+      "Arthajama Puja (Night Prayer)"
+    ],
+    "festivals": [
+      "Chithirai Brahmotsavam",
+      "Mahashivaratri",
+      "Rajaraja Chola Birth Anniversary (Sathaya Vizha)"
+    ],
+    "dress_code": "Respectful, modest clothing. Shoulders and knees must be covered. Footwear must be deposited at the entrance gateway (Gopuram).",
+    "visitor_guidelines": "Photography is permitted in outer courtyards but strictly prohibited inside the main sanctum. Please do not touch or lean on ancient stone carvings.",
+    "best_time_to_visit": "November to February during pleasant weather in Tamil Nadu.",
+    "facilities": [
+      "ASI Information Board",
+      "Shoe Keeping Counters",
+      "Garden Rest Area",
+      "Clean Drinking Water",
+      "Parking Facilities"
+    ],
+    "location_information": "Located on Membalam Road, Balaganapathy Nagar, Thanjavur, Tamil Nadu 613007.",
+    "source_name": "UNESCO World Heritage Centre & ASI",
+    "source_url": "https://whc.unesco.org/en/list/250/",
+    "last_verified_at": "2026-09-15"
+  },
+  {
+    "name": "Meenakshi Amman Temple",
+    "city": "Madurai",
+    "state": "Tamil Nadu",
+    "deity": "Goddess Meenakshi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Madurai_Meenakshi_Amman_Temple_Gopuram.jpg/800px-Madurai_Meenakshi_Amman_Temple_Gopuram.jpg",
+    "short_description": "An ancient historic temple situated on the southern bank of the Vaigai River in Madurai, famed for its 14 colorful sculptured gopurams.",
+    "historical_background": "Mentioned in early Tamil Sangam literature. Major expansions were executed under the Pandyan rulers and later magnificently restored by Nayak dynasty rulers in the 16th-17th centuries.",
+    "religious_cultural_significance": "A premier pilgrimage center in Shaktism and Shaivism housing the iconic Hall of 1000 Pillars and sacred Golden Lotus Tank (Porthamarai Kulam).",
+    "darshan_timings": [
+      "05:00 AM - 12:30 PM (Morning Session)",
+      "04:00 PM - 10:00 PM (Evening Session)"
+    ],
+    "daily_rituals": [
+      "Thiruvanandal Puja (5:00 AM)",
+      "Vilas Puja (6:30 AM)",
+      "Uchikalam Puja (10:30 AM)",
+      "Night Palliyarai Procession (9:30 PM)"
+    ],
+    "festivals": [
+      "Chithirai Thiruvizha (Celestial Wedding)",
+      "Navaratri Festival",
+      "Float Festival (Teppotsavam)"
+    ],
+    "dress_code": "Traditional dress required. Dhoti/Pants for men and Saree/Salwar for women. Western shorts and sleeveless tops are strictly prohibited.",
+    "visitor_guidelines": "Electronic items and mobile phones are prohibited inside temple premises. Deposit them in official lockers at entrance gopurams.",
+    "best_time_to_visit": "October to March.",
+    "facilities": [
+      "Cloakroom & Locker Facilities",
+      "Mobile Deposit Counters",
+      "Special Darshan Queue Lines",
+      "Wheelchair Support",
+      "Prasadam Stalls"
+    ],
+    "location_information": "Located at Madurai Main, Madurai, Tamil Nadu 625001.",
+    "source_name": "Tamil Nadu Tourism Development Corporation",
+    "source_url": "https://www.maduraimeenakshi.org/",
+    "last_verified_at": "2026-09-15"
+  },
+  {
+    "name": "Somnath Temple",
+    "city": "Veraval",
+    "state": "Gujarat",
+    "deity": "Lord Shiva",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Somnath_Temple_Gujarat_India.jpg/800px-Somnath_Temple_Gujarat_India.jpg",
+    "short_description": "Revered as the first of the twelve holy Jyotirlinga shrines of Lord Shiva, situated on the coast of the Arabian Sea in Prabhas Patan.",
+    "historical_background": "Mentioned in Rigveda and Skanda Purana. Rebuilt several times throughout history; the present majestic temple was constructed in Maru-Gurjara style in 1951.",
+    "religious_cultural_significance": "Symbolizes eternal resilience and spiritual sanctity. The Banastambha (arrow pillar) on the sea wall points directly to Antarctica without any landmass in between.",
+    "darshan_timings": [
+      "06:00 AM - 10:00 PM",
+      "Aarti: 07:00 AM, 12:00 PM, 07:00 PM",
+      "Light & Sound Show: 08:00 PM"
+    ],
+    "daily_rituals": [
+      "Morning Abhishekam & Aarti (7:00 AM)",
+      "Midday Mahapuja (12:00 PM)",
+      "Evening Sandhya Aarti (7:00 PM)"
+    ],
+    "festivals": [
+      "Mahashivaratri",
+      "Kartik Purnima Mela",
+      "Shravan Maas Celebrations"
+    ],
+    "dress_code": "Decent, modest clothing. Shorts and revealing outfits are not allowed.",
+    "visitor_guidelines": "Strict security screening at entrance. Mobiles, cameras, and electronic gadgets must be stored in free lockers before entering.",
+    "best_time_to_visit": "November to February during pleasant coastal weather.",
+    "facilities": [
+      "Bhojanalaya (Subsidized Dining)",
+      "Locker Rooms",
+      "Sea-View Promenade",
+      "Battery Vehicles for Senior Citizens",
+      "Parking Area"
+    ],
+    "location_information": "Prabhas Patan, Veraval, Gujarat 362268 on the Arabian coastline.",
+    "source_name": "Shree Somnath Trust & Gujarat Tourism",
+    "source_url": "https://www.somnath.org/",
+    "last_verified_at": "2026-09-15"
+  },
+  {
+    "name": "Konark Sun Temple",
+    "city": "Konark",
+    "state": "Odisha",
+    "deity": "Lord Surya",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Konark_Sun_Temple_Structures.jpg/800px-Konark_Sun_Temple_Structures.jpg",
+    "short_description": "A 13th-century Sun Temple built by King Narasimhadeva I, designed as a giant stone chariot with 24 intricate wheels drawn by 7 horses.",
+    "historical_background": "Constructed around 1250 AD in Kalinga architectural style. Inscribed as a UNESCO World Heritage Site in 1984.",
+    "religious_cultural_significance": "A monumental landmark of Indian temple architecture celebrating solar worship and astronomical science through carved stone sundial wheels.",
+    "darshan_timings": [
+      "06:00 AM - 08:00 PM (Monument Visiting Hours)",
+      "Light & Sound Show: 07:00 PM - 08:00 PM"
+    ],
+    "daily_rituals": [
+      "Heritage Monument Walkthrough",
+      "Evening Illumination & Audio-Visual Presentation"
+    ],
+    "festivals": [
+      "Konark Dance Festival (December)",
+      "Chandrabhaga Mela (February)",
+      "Magha Saptami"
+    ],
+    "dress_code": "Casual modest clothing suitable for outdoor heritage site walking.",
+    "visitor_guidelines": "Entry ticket required via ASI portal or scanner. Avoid touching or climbing on protected stone sculptures and chariot wheels.",
+    "best_time_to_visit": "September to March.",
+    "facilities": [
+      "ASI Ticket Counter & QR Entry",
+      "Licensed Tourist Guides",
+      "Drinking Water Stations",
+      "Museum & Interpretation Centre",
+      "Restroom Facilities"
+    ],
+    "location_information": "Konark, Puri district, Odisha 752111, off the Bay of Bengal coast.",
+    "source_name": "Archaeological Survey of India (ASI) & UNESCO",
+    "source_url": "https://whc.unesco.org/en/list/253/",
+    "last_verified_at": "2026-09-15"
+  },
+  {
+    "name": "Jagannath Temple",
+    "city": "Puri",
+    "state": "Odisha",
+    "deity": "Lord Jagannath",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Jagannath_Temple_Puri_Odisha.jpg/800px-Jagannath_Temple_Puri_Odisha.jpg",
+    "short_description": "A sacred Char Dham pilgrimage site famous for its sacred wooden deities and world-renowned annual Rath Yatra (Chariot Festival).",
+    "historical_background": "Constructed in the 12th century AD by King Anantavarman Chodaganga Deva of the Eastern Ganga Dynasty.",
+    "religious_cultural_significance": "Represents the heart of Odia cultural identity and Vaishnava devotion. Celebrated for Mahaprasad prepared in traditional clay pots in the world's largest temple kitchen.",
+    "darshan_timings": [
+      "05:00 AM - 11:00 PM (Daily Pilgrim Hours)"
+    ],
+    "daily_rituals": [
+      "Mangala Aarti (5:00 AM)",
+      "Besha Bhoga",
+      "Madhyahna Dhupa (Midday Bhog)",
+      "Sandhya Aarti",
+      "Badashingar Besha (Night Ritual)"
+    ],
+    "festivals": [
+      "Rath Yatra (Grand Chariot Festival)",
+      "Snana Yatra",
+      "Bahuda Yatra",
+      "Chandan Yatra"
+    ],
+    "dress_code": "Strict traditional attire. Leather items, electronic devices, and cameras are prohibited inside temple premises.",
+    "visitor_guidelines": "Non-Hindus can view temple compound from Raghunandan Library roof. Follow queue guidance provided by temple administration.",
+    "best_time_to_visit": "November to February (and June/July for Rath Yatra).",
+    "facilities": [
+      "Ananda Bazar (Mahaprasad Dining)",
+      "Shoe & Locker Counters",
+      "Information Kiosks",
+      "First Aid Station"
+    ],
+    "location_information": "Grand Road, Puri, Odisha 752001.",
+    "source_name": "Shree Jagannath Temple Administration (SJTA) & Odisha Tourism",
+    "source_url": "https://shreejagannatha.in/",
+    "last_verified_at": "2026-09-15"
+  },
+  {
+    "name": "Tirumala Venkateswara Temple",
+    "city": "Tirupati",
+    "state": "Andhra Pradesh",
+    "deity": "Lord Venkateswara",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Tirumala_Venkateswara_Temple_Ananda_Nilayam.jpg/800px-Tirumala_Venkateswara_Temple_Ananda_Nilayam.jpg",
+    "short_description": "Situated on Seshachalam Hills in Tirumala, this is one of the most visited and sacred hill pilgrimage shrines in the world.",
+    "historical_background": "Patronized by major South Indian dynasties including Pallavas, Cholas, Hoysalas, and Vijayanagara emperors such as Sri Krishnadevaraya.",
+    "religious_cultural_significance": "Believed to be Kali Yuga Vaikuntam. Famous for GI-tagged Tirupati Laddu Prasadam and sacred tonsuring rituals.",
+    "darshan_timings": [
+      "03:00 AM - 01:30 AM (Open 22 Hours daily via queue complexes)"
+    ],
+    "daily_rituals": [
+      "Suprabhatam (3:00 AM)",
+      "Tomala Seva",
+      "Archana",
+      "Kalyanotsavam",
+      "Ekantha Seva (Night 1:30 AM)"
+    ],
+    "festivals": [
+      "Srivari Brahmotsavam (September/October)",
+      "Vaikunta Ekadasi",
+      "Ratha Saptami"
+    ],
+    "dress_code": "Strictly enforced. Men must wear Dhoti/Kurta. Women must wear Saree, Half-Saree, or Chudidhar with Dupatta. Jeans and T-shirts are prohibited in darshan lines.",
+    "visitor_guidelines": "Book advance slot tokens online via TTD official portal. Wear RFID wristbands for young children. Security checkpoint mandatory at Alipiri.",
+    "best_time_to_visit": "September to March.",
+    "facilities": [
+      "Free Pilgrim Accommodation Halls",
+      "Free Annaprasadam Dining",
+      "TTD Laddu Counters",
+      "Medical & First Aid Centers",
+      "Free Shuttle Buses"
+    ],
+    "location_information": "Tirumala Hills, Tirupati, Tirupati District, Andhra Pradesh 517504.",
+    "source_name": "Tirumala Tirupati Devasthanams (TTD)",
+    "source_url": "https://tirupatibalaji.ap.gov.in/",
+    "last_verified_at": "2026-09-15"
+  },
+  {
+    "name": "Kedarnath Temple",
+    "city": "Kedarnath",
+    "state": "Uttarakhand",
+    "deity": "Lord Shiva",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Kedarnath_Temple_Garhwal_Himalayas.jpg/800px-Kedarnath_Temple_Garhwal_Himalayas.jpg",
+    "short_description": "A revered mountain temple nestled in the Garhwal Himalayan range near Mandakini river at an altitude of 3,583 meters above sea level.",
+    "historical_background": "Believed to have been originally established by Pandavas and later revived by Adi Shankaracharya in the 8th century AD.",
+    "religious_cultural_significance": "One of the highest sacred Jyotirlingas and a key shrine of the Chota Char Dham pilgrimage of Uttarakhand.",
+    "darshan_timings": [
+      "05:00 AM - 02:00 PM (Morning Darshan)",
+      "05:00 PM - 09:00 PM (Evening Darshan & Aarti)"
+    ],
+    "daily_rituals": [
+      "Maha Abhishek (Morning 4:00 AM)",
+      "Shiva Sahasranama Recitation",
+      "Sandhya Aarti (Evening 6:30 PM)"
+    ],
+    "festivals": [
+      "Temple Opening Ceremony (Akshaya Tritiya)",
+      "Temple Closing Ceremony (Bhai Dooj)",
+      "Badri-Kedar Utsav"
+    ],
+    "dress_code": "Warm heavy woollens, comfortable trekking boots, and modest clothing suited for Himalayan high-altitude weather.",
+    "visitor_guidelines": "Mandatory Chardham Yatra registration required. Physical fitness verification recommended. Trek distance is 16 km from Gaurikund (Helicopter & Pony services available).",
+    "best_time_to_visit": "May to June and September to October (Closed Nov to April due to snow).",
+    "facilities": [
+      "GMVN Tourist Bungalows",
+      "Medical Relief Posts",
+      "Kedarnath Helipad",
+      "Pony & Palki Counters",
+      "Emergency Mountain Rescue"
+    ],
+    "location_information": "Kedarnath, Rudraprayag district, Uttarakhand 246445.",
+    "source_name": "Uttarakhand Tourism Development Board & BKTC",
+    "source_url": "https://badrinath-kedarnath.gov.in/",
+    "last_verified_at": "2026-09-15"
+  }
+]

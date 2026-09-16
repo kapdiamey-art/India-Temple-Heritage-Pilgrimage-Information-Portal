@@ -19,9 +19,18 @@ class TempleBase(BaseModel):
     best_time_to_visit: str
     facilities: List[str] = []
     location_information: str
+    source_name: Optional[str] = None
+    source_url: Optional[str] = None
+    last_verified_at: Optional[str] = None
+
+
+
+class TempleCreate(TempleBase):
+    pass
 
 
 class TempleRead(TempleBase):
     id: int
 
     model_config = ConfigDict(from_attributes=True)
+

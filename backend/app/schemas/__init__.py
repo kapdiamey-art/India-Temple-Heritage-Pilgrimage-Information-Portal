@@ -1,4 +1,5 @@
-from app.schemas.temple import TempleBase, TempleRead
+from app.schemas.temple import TempleBase, TempleCreate, TempleRead
 
-__all__ = ["TempleBase", "TempleRead"]
+__all__ = ["TempleBase", "TempleCreate", "TempleRead"]
+
 
