@@ -1,17 +1,26 @@
 import { useMemo, useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import { Search, X, Loader2 } from 'lucide-react'
 import { fetchTemples } from '../services/api.js'
 
 const fallbackImage = 'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80'
 
 function Temples() {
+  const [searchParams, setSearchParams] = useSearchParams()
   const [temples, setTemples] = useState([])
   const [loading, setLoading] = useState(true)
-  const [search, setSearch] = useState('')
-  const [selectedState, setSelectedState] = useState('')
-  const [selectedCity, setSelectedCity] = useState('')
-  const [selectedDeity, setSelectedDeity] = useState('')
+  const [search, setSearch] = useState(searchParams.get('search') || '')
+  const [selectedState, setSelectedState] = useState(searchParams.get('state') || '')
+  const [selectedCity, setSelectedCity] = useState(searchParams.get('city') || '')
+  const [selectedDeity, setSelectedDeity] = useState(searchParams.get('deity') || '')
+
+  useEffect(() => {
+    // Keep internal filters in sync if URL search params change
+    if (searchParams.has('state')) setSelectedState(searchParams.get('state'))
+    if (searchParams.has('deity')) setSelectedDeity(searchParams.get('deity'))
+    if (searchParams.has('search')) setSearch(searchParams.get('search'))
+    if (searchParams.has('city')) setSelectedCity(searchParams.get('city'))
+  }, [searchParams])
 
   useEffect(() => {
     fetchTemples()
@@ -24,6 +33,7 @@ function Temples() {
         setLoading(false)
       })
   }, [])
+
 
 
   const states = useMemo(() => {
@@ -60,7 +70,9 @@ function Temples() {
     setSelectedState('')
     setSelectedCity('')
     setSelectedDeity('')
+    setSearchParams({})
   }
+
 
   return (
     <section className="page page-temples">

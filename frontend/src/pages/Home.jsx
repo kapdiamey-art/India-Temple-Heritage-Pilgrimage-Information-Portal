@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
+
 import { Link } from 'react-router-dom'
 import { Search, MapPin, Landmark, Calendar, Route, ArrowRight, Loader2 } from 'lucide-react'
 import { fetchTemples } from '../services/api.js'
@@ -48,6 +49,7 @@ const stories = [
 function Home() {
   const [temples, setTemples] = useState([])
   const [loading, setLoading] = useState(true)
+  const [searchQuery, setSearchQuery] = useState('')
 
   useEffect(() => {
     fetchTemples()
@@ -60,6 +62,19 @@ function Home() {
         setLoading(false)
       })
   }, [])
+
+  // Calculate dynamic state counts from live backend records
+  const dynamicStates = useMemo(() => {
+    if (!temples || temples.length === 0) return states
+    const map = {}
+    temples.forEach((t) => {
+      map[t.state] = (map[t.state] || 0) + 1
+    })
+    return Object.keys(map).map((stateName) => ({
+      name: stateName,
+      count: map[stateName],
+    })).sort((a, b) => b.count - a.count)
+  }, [temples])
 
   return (
     <div className="home-page">
@@ -74,10 +89,23 @@ function Home() {
                 across India through a living heritage guide.
               </p>
 
-              <div className="hero-search">
+              <form
+                className="hero-search"
+                onSubmit={(e) => {
+                  e.preventDefault()
+                  if (searchQuery.trim()) {
+                    window.location.href = `/temples?search=${encodeURIComponent(searchQuery.trim())}`
+                  }
+                }}
+              >
                 <Search size={18} />
-                <input type="text" placeholder="Search temples, cities, states or deities..." />
-              </div>
+                <input
+                  type="text"
+                  value={searchQuery}
+                  placeholder="Search temples, cities, states or deities..."
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                />
+              </form>
 
               <div className="hero-buttons">
                 <Link className="primary-button" to="/temples">Explore Temples</Link>
@@ -134,15 +162,15 @@ function Home() {
         </div>
 
         <div className="state-grid">
-          {states.map((state) => (
+          {dynamicStates.map((state) => (
             <article className="state-card" key={state.name}>
               <div className="state-card-top">
                 <span className="state-name">{state.name}</span>
-                <span className="state-count">{state.count} temples</span>
+                <span className="state-count">{state.count} {state.count === 1 ? 'temple' : 'temples'}</span>
               </div>
               <div className="state-card-bottom">
                 <span className="state-card-icon"><Landmark size={22} /></span>
-                <Link className="state-button" to="/temples">Explore</Link>
+                <Link className="state-button" to={`/temples?state=${encodeURIComponent(state.name)}`}>Explore</Link>
               </div>
             </article>
           ))}
@@ -159,13 +187,14 @@ function Home() {
 
         <div className="deity-grid">
           {deities.map((deity) => (
-            <button className="deity-card" key={deity.name}>
+            <Link className="deity-card" key={deity.name} to={`/temples?deity=${encodeURIComponent(deity.name)}`}>
               <span className="deity-icon">{deity.icon}</span>
               <span className="deity-name">{deity.name}</span>
-            </button>
+            </Link>
           ))}
         </div>
       </section>
+
 
       <section className="section-block circuit-section">
         <div className="section-head">
